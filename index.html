@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+        </label>
+        <p class="toggle-text">Dark Mode</p>
+    </div>
+
+    <div class="container">
+        <h1>🎤 Speech-to-Text Pad</h1>
+        <p class="subtitle">Speak anything — your words will appear below in real time.</p>
+
+        <textarea id="output" placeholder="Start speaking..." readonly></textarea>
+
+        <div class="mic-btn" id="startBtn">
+            <div class="mic-circle"></div>
+            <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" class="mic-icon">
+        </div>
+
+        <div class="btn-group">
+            <button class="stop" id="stopBtn">Stop</button>
+            <button class="clear" id="clearBtn">Clear</button>
+            <button class="save" id="saveBtn">Download</button>
+        </div>
+
+        <p id="status" class="status">● Not Listening</p>
+        <p id="count" class="count">Words: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
